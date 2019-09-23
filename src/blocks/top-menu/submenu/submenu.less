@@ -1,0 +1,45 @@
+.submenu {
+    list-style-type: none;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    z-index: 1;
+    display: none;
+    color: white;
+    font-size: 14px;
+    background-color: #343434;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.submenu__link {
+    margin: 5px;
+}
+
+.main-menu__link:hover .submenu {
+    display: block;
+}
+
+.submenu__link:hover a {
+    background-color: orange;
+}
+
+
+.subsubmenu {
+    position: absolute;
+    z-index: 2;
+    left: 100px;
+    display: none;
+    color: white;
+    font-size: 14px;
+    background-color: #343434;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.submenu__link:hover .subsubmenu {
+    display: block;
+}
