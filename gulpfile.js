@@ -6,7 +6,7 @@ const browserSync = require('browser-sync');
 const server = browserSync.create();
 
 const paths = {
-    less: 'src/**/**/*.less'
+    less: 'src/**/**/**/**/*.less'
 };
 
 const scripts = () => gulp.src(paths.less, { sourcemaps: true })

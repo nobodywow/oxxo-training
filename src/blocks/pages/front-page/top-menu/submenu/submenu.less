@@ -1,0 +1,96 @@
+@import (reference) './variables.less';
+
+.submenu {
+    list-style: none;
+    margin-top: 20px;
+    left: 0px;
+    z-index: 2;
+    display: none;
+    font-size: 14px;    
+    font-family: 'Open Sans';
+    background-color: @submenu-background-color;
+    font-weight: 400;
+    padding: 20px;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.submenu__wrapper {
+    background: transparent;
+    position: absolute;
+}
+
+.submenu__link::before {
+    content: "\2022";
+    color: white;
+    font-weight: 500;
+    width: 1em;
+    padding-right: 0.5em;
+}
+
+.submenu__link {
+    margin: 0px;
+    padding: 0px;
+}
+
+.submenu > li > a {
+    color: @submenu-link-color;
+}
+
+.main-menu__link:hover .submenu {
+    display: block;
+}
+
+.submenu__link:hover > a {
+    color: @submenu-link-hover-color
+}
+
+.subsubmenu {
+    list-style: none;
+    margin-top: -30px;
+    display: block;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    background-color: #343434;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.submenu__link:hover .subsubmenu__wrapper {
+    display: block;
+}
+
+.subsubmenu__wrapper {
+    z-index: 0;
+    background: transparent;
+    display: none;
+    position: absolute;
+    left: 190px;
+    top: 80px;
+    padding: 50px 35px;   
+}
+
+.submenu__link {
+    margin: 0px;
+    padding: 0px;
+}
+
+.subsubmenu__link::before {
+    content: "\2022";
+    color: white;
+    font-weight: 500;
+    width: 1em;
+    padding-right: 0.5em;
+}
+
+.subsubmenu > li > a {
+    color: #AFAFAF;
+}
+
+.subsubmenu__link:hover > a {
+    color: #F3F3F3;
+}
+
+

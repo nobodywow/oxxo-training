@@ -1,0 +1,145 @@
+@import (reference) './variables.less';
+
+// .footer {
+//     display: flex;
+//     flex-wrap: wrap;
+//     padding: 55px 135px 95px 135px;
+//     background-color: @footer-background-color;
+//     @media (max-width: 904px) {
+//         padding: 55px 50px 95px 50px;
+//     }
+// }
+
+// .footer__item {
+//     flex: 1;
+//     margin: 10px;
+// }
+
+.footer {
+    padding: 55px 135px 95px;
+    background-color: @footer-background-color;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    @media (max-width: 938px) {
+        padding: 55px 50px 35px;
+    }
+    @media (max-width: 480px) {
+        padding: 55px 40px 35px;
+    }
+}
+
+.footer-item__main-title {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: @color-white;
+    margin-bottom: 10px;
+}
+
+.footer-item__secondary-title {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: @color-white;
+}
+
+.footer-item__secondary-title_light {
+    font-weight: 300;
+}
+
+.footer-item__text {
+    font-family: 'Open Sans';
+    font-size: 14px;  
+    color: #ACABAB;
+    font-weight: 300;
+}
+
+.footer-item__text_small {
+    font-size: 13px;
+}
+
+.footer-item__text_color_orange {
+    color: @color-orange;
+}
+
+.footer__contact-item {
+    margin-bottom: 20px;
+}
+
+.footer__socials {
+    display: flex;
+    margin: 0px -5px;
+}
+
+.footer__post-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    margin-right: 15px;
+}
+
+.footer-item__collapsible:nth-child(2) {
+    padding-top: 0px;
+}
+
+.footer-item__collapsible {
+    padding: 7px 0;
+    border-bottom: 1px solid @color-white;
+}
+
+
+.collapsible__button {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: @color-white;
+    float: right;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: @color-orange;
+}
+
+.footer-item__inputs {
+    display: grid;
+    row-gap: 15px;
+}
+
+.input {    
+    border-radius: 3px;
+    border-width: 1px;
+    resize: none;
+}
+
+.input_small {
+    height: 35px;
+}
+
+.input_large {
+    height: 120px;
+    padding: 1px 0px;
+}
+
+.input::placeholder {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: @color-grey;
+}
+
+// .teststuff {
+//     position: absolute;
+//     padding: 10px;
+//     right: 155px;    
+// }
+
+.button-container {
+    display: block;
+    width: 100%;
+}
+
+.button_place_right {
+    float: right;
+    margin-right: 0px;
+}
+

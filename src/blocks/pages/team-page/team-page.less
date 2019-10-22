@@ -1,0 +1,96 @@
+@import (reference) './variables.less';
+
+.team-page {
+    background-color: @background-color-theme;    
+    padding-top: 80px;
+}
+
+.team-cards-container {
+    margin-top: 10px 130px;
+    display: grid;
+    grid-template-columns: 270px;
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-content: center;    
+    @media (min-width: 1170px) {
+        grid-template-columns: 270px 270px 270px 270px;
+        row-gap: 0px;
+    }
+}
+
+.team-card {
+    display: grid;
+}
+
+.team-card__photo {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-card__title {    
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-style: 'light';
+    font-size: 16px;
+    line-height: 42px;
+}
+
+.team-card__title_color {
+    color: @logo_title_letter;
+}
+
+.team-card__text {
+    justify-content: center;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: 'Open Sans';
+    font-style: 'light';
+    text-align: center;
+}
+
+.team-card__socials {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px -5px 0;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+.social-icon_margin {
+    margin: 5px;
+}
+
+.social-icon_opaque {
+    background: transparent;
+}
+
+.social-icon_border_dark {
+    border: 1px solid @color-dark-grey;
+}
+
+.social-icon:hover > .icon-social {
+    color: @color-white;
+}
+
+.icon-social { 
+    color: @color-grey; 
+    min-width: 50px; 
+    text-align: center; 
+} 
+
+.social-icon:hover {
+    background-color: @logo_title_letter;
+}
+
+.social-icon_opaque:hover {
+    background-color: @color-white;    
+}

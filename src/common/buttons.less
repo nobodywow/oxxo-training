@@ -1,0 +1,63 @@
+@import (reference) './variables.less';
+
+.buttons {
+    display: flex;
+    margin: 0 -20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 159px;
+    // height: 48px;
+    cursor: pointer;
+    background-color: @color-white;
+    border: 1px solid @color-orange;
+    border-radius: 3px;
+    color: @color-orange;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    margin: 20px;
+    @media (max-width: 440px) {
+        padding: 15px 20px;
+    }
+}
+
+.button_theme_orange {
+    color: @color-white;
+    background-color: @color-orange;
+}
+
+.button:hover {
+    background-color: @color-orange;
+    color: @color-white;
+    cursor: pointer;
+}
+
+.button-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    color: @color-white;
+    font-size: 30px;
+    height: 48px;
+    width: 48px;
+    border: 1px solid @color-white;
+    background-color: rgba(270, 270, 270, .2);
+}
+
+.button-arrow_opaque {
+    background-color: rgba(270, 270, 270, 0);
+}
+
+.button-arrow:hover {
+    cursor: pointer;
+    color: @color-orange;
+    background-color: @color-white;
+    border: 1px solid @color-orange;
+}

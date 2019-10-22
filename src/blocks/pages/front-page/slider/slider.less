@@ -1,18 +1,24 @@
+@import (reference) './variables.less';
+
 .slider {
     display: flex;
     width: 100%;
     justify-content: center;
     position: relative;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 }
 
 .slider__nav-button_left {
     position: absolute;
+    cursor: pointer;
     left: 0;
     top: 0;
 }
 
 .slider__nav-button_right {
     position: absolute;
+    cursor: pointer;
     right: 0;
     top: 0;
 }
@@ -23,28 +29,39 @@
 }
 
 .slider__header-text {
+    text-align: center;
     color: white;
+    font-family: 'Open Sans';
     font-size: 72px;
-    font-weight: 400;
-    margin-bottom: 7px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    @media (max-width: 650px) {
+        font-size: 56px;
+    }
 }
 
 .slider__secondary-text-container {
     display: flex;    
     margin-bottom: 55px;
+    @media (max-width: 650px) {
+        flex-direction: column;
+    }
+
 }
 
 .slider__text {
+    font-family: 'Open Sans';
     color: white;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .slider__text_colored {
-    color: #FF7200;
+    color: @slider-text-color;
 }
 
 .slider__button {
+    cursor: pointer;
     display: grid;
     width: 187px;
     height: 60px;
@@ -52,11 +69,13 @@
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+    color: @slider-button-text;
+    font-size: @slider-button-font-size;
 }
 
-.slider__button-text {
-    color: white;
-    font-size: 14px;
+.slider__button:hover {
+    background-color: @color-white;
+    color: @main-menu-link-hover-color;
 }
 
 .slider__text, .slider__header-text, .slider__button-text {

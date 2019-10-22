@@ -1,0 +1,30 @@
+@import (reference) './variables.less';
+
+.buy-page {
+    margin: 95px 100px;
+    display: grid;
+    justify-items: center;
+    @media (max-width: 768px) {
+        margin: 95px 20px;
+    }
+}
+
+.buy__text {
+    text-align: center;
+    color: @text-color-grey;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    margin-bottom: 20px;
+}
+
+.buy__text_color {
+    color: @logo_title_letter;
+}
+
+.buy__buttons {
+    margin-top: 10px;
+}
+
+.button:hover > .icon_orange {
+    color: @color-white;
+}

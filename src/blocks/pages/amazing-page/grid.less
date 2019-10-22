@@ -1,0 +1,41 @@
+@import (reference) './variables.less';
+
+
+.amazing-page__grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 100px 100px;
+    row-gap: 50px;
+    column-gap: 70px;
+    @media (max-width: 1184px) {
+        grid-template-columns: 330px 330px;
+    }
+    @media (max-width: 768px) {
+        grid-template-columns: 340px;
+        grid-template-rows: none;
+    }
+    
+}
+
+.grid-item {
+    display: flex;
+}
+
+.grid-item__icon {
+    margin-right: 30px;
+}
+
+.grid-item__title {
+    color: @color-white;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.grid-item__text {
+    color: @color-white;    
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
