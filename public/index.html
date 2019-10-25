@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -59,26 +60,56 @@
       </div>
 
       <div class="slider">
+        <div class="slider__item">
 
-        <div class="slider__content">
-          <a class="slider__nav-button_left">
-            <img src="./images/left-navbutton.png">
-          </a>
-          <div class="slider__header-text">WE ARE OXXO</div>
-          <div class="slider__secondary-text-container">
-            <span class="slider__text">WEB DESIGN •&nbsp</span>
-            <span class="slider__text slider__text_colored">SOCIAL MEDIA&nbsp</span>
-            <span class="slider__text">• GRAPHICS •&nbsp</span>
-            <span class="slider__text">START-UP</span>
+          <div class="slider__content fade">
+            <div class="slider__header-text">WE ARE OXXO</div>
+            <div class="slider__secondary-text-container">
+              <span class="slider__text">WEB DESIGN •&nbsp</span>
+              <span class="slider__text slider__text_colored">SOCIAL MEDIA&nbsp</span>
+              <span class="slider__text">• GRAPHICS •&nbsp</span>
+              <span class="slider__text">START-UP</span>
+            </div>
+            <div class="slider__button">
+              <div class="slider__button-text">MORE ABOUT US</div>
+            </div>
           </div>
-          <div class="slider__button">
-            <div class="slider__button-text">MORE ABOUT US</div>
-          </div>
-          <a class="slider__nav-button_right">
-            <img src="./images/right-navbutton.png">
-          </a>
+
         </div>
+
+        <div class="slider__item">
+
+          <div class="slider__content fade">
+            <div class="slider__buttons">
+              <div class="slider__button  slider__button_whitespace">
+                <div class="slider__button-text">SOCIAL MEDIA</div>
+              </div>
+              <div class="slider__button slider__button_whitespace">
+                <div class="slider__button-text">WEB DESIGN</div>
+              </div>
+              <div class="slider__button slider__button_whitespace">
+                <div class="slider__button-text">DIGITAL AGENCY</div>
+              </div>
+            </div>
+            <div class="slider__text slider__text_small">We are the best. Please choose one of our services.</div>
+          </div>
+
+        </div>
+
+
+        <div class="slider__nav-button_left" onclick="plusSlides(-1)">
+          <img data-src="./images/left-navbutton.png">
+        </div>
+
+        <div class="slider__nav-button_right" onclick="plusSlides(1)">
+          <img data-src="./images/right-navbutton.png">
+        </div>
+
+
+
+
       </div>
+    </div>
     </div>
 
   </section>
@@ -147,14 +178,14 @@
       <div class="second-page__content">
         <div class="image-slider">
           <div class="image-container">
-            <img class="image" src="images/slide1.png">
+            <img class="image" data-src="images/slide1.jpg">
             <div class="button-arrow button-arrow_left">
               <i class="fa fa-chevron-left fa-xs icon-arrow"></i>
             </div>
             <div class="button-arrow button-arrow_right">
               <i class="fa fa-chevron-right fa-xs icon-arrow"></i>
             </div>
-            <img class="image-shadow" src="images/slider-shadow.png">
+            <img class="image-shadow" data-src="images/slider-shadow.jpg">
           </div>
         </div>
         <div class="content_right">
@@ -186,7 +217,7 @@
 
   <section id="we-are-amazing">
 
-    <div class="amazing-page">
+    <div class="amazing-page lazy">
       <div class="title-container">
         <div class="title__text_primary title__text_theme_white">
           WE ARE AMAZING. YES WE ARE.
@@ -279,7 +310,7 @@
 
       <div class="team-cards-container">
         <div class="team-card">
-          <img class="team-card__photo" src="./images/team-card1.png"></img>
+          <img class="team-card__photo" data-src="./images/team-card1.jpg"></img>
           <div class="team-card__title">
             <span class="team-card__title">Jennifer Doe&nbsp</span>
             <span class="team-card__title team-card__title_color">/ Web Designer</span>
@@ -306,7 +337,7 @@
         </div>
 
         <div class="team-card">
-          <img class="team-card__photo" src="./images/team-card2.png"></img>
+          <img class="team-card__photo" data-src="./images/team-card2.jpg"></img>
           <div class="team-card__title">
             <span class="team-card__title_default">John Doe&nbsp</span>
             <span class="team-card__title_color">/ General Manager</span>
@@ -333,7 +364,7 @@
         </div>
 
         <div class="team-card">
-          <img class="team-card__photo" src="./images/team-card3.png"></img>
+          <img class="team-card__photo" data-src="./images/team-card3.jpg"></img>
           <div class="team-card__title">
             <span class="team-card__title_default">Andrea Doe&nbsp</span>
             <span class="team-card__title_color">/ Graphic Designer</span>
@@ -360,7 +391,7 @@
         </div>
 
         <div class="team-card">
-          <img class="team-card__photo" src="./images/team-card4.png"></img>
+          <img class="team-card__photo" data-src="./images/team-card4.jpg"></img>
           <div class="team-card__title">
             <span class="team-card__title_default">Michael Doe&nbsp</span>
             <span class="team-card__title_color">/ CEO</span>
@@ -405,7 +436,7 @@
 
       <div class="tiles-container">
         <div class="tile-item">
-          <img class="tile-item__image" src="./images/tile1.png">
+          <img class="tile-item__image" data-src="./images/tile1.jpg">
           <div class="tile-item__menu">
             <div class="tile-item__text tile-item__title">car</div>
             <div class="tile-item__text tile-item__desc">PHOTOGRAPHY</div>
@@ -420,7 +451,7 @@
           </div>
         </div>
         <div class="tile-item">
-          <img class="tile-item__image" src="./images/tile2.png">
+          <img class="tile-item__image" data-src="./images/tile2.jpg">
           <div class="tile-item__menu">
             <div class="tile-item__text tile-item__title">A Bottle of Vine</div>
             <div class="tile-item__text tile-item__desc">PHOTOGRAPHY</div>
@@ -435,7 +466,7 @@
           </div>
         </div>
         <div class="tile-item">
-          <img class="tile-item__image" src="./images/tile3.png">
+          <img class="tile-item__image" data-src="./images/tile3.jpg">
           <div class="tile-item__menu">
             <div class="tile-item__text tile-item__title">Couch</div>
             <div class="tile-item__text tile-item__desc">PHOTOGRAPHY</div>
@@ -450,7 +481,7 @@
           </div>
         </div>
         <div class="tile-item">
-          <img class="tile-item__image" src="./images/tile4.png">
+          <img class="tile-item__image" data-src="./images/tile4.jpg">
           <div class="tile-item__menu">
             <div class="tile-item__text tile-item__title">Chair</div>
             <div class="tile-item__text tile-item__desc">PHOTOGRAPHY</div>
@@ -465,7 +496,7 @@
           </div>
         </div>
         <div class="tile-item">
-          <img class="tile-item__image" src="./images/tile5.png">
+          <img class="tile-item__image" data-src="./images/tile5.jpg">
           <div class="tile-item__menu">
             <div class="tile-item__text tile-item__title">Some alcohol</div>
             <div class="tile-item__text tile-item__desc">PHOTOGRAPHY</div>
@@ -480,7 +511,7 @@
           </div>
         </div>
         <div class="tile-item">
-          <img class="tile-item__image" src="./images/tile6.png">
+          <img class="tile-item__image" data-src="./images/tile6.jpg">
           <div class="tile-item__menu">
             <div class="tile-item__text tile-item__title">Even more alcohol</div>
             <div class="tile-item__text tile-item__desc">PHOTOGRAPHY</div>
@@ -495,7 +526,7 @@
           </div>
         </div>
         <div class="tile-item">
-          <img class="tile-item__image" src="./images/tile7.png">
+          <img class="tile-item__image" data-src="./images/tile7.jpg">
           <div class="tile-item__menu">
             <div class="tile-item__text tile-item__title">fancy bicycle?</div>
             <div class="tile-item__text tile-item__desc">PHOTOGRAPHY</div>
@@ -510,7 +541,7 @@
           </div>
         </div>
         <div class="tile-item">
-          <img class="tile-item__image" src="./images/tile8.png">
+          <img class="tile-item__image" data-src="./images/tile8.jpg">
           <div class="tile-item__menu">
             <div class="tile-item__text tile-item__title">wine</div>
             <div class="tile-item__text tile-item__desc">PHOTOGRAPHY</div>
@@ -546,7 +577,7 @@
   </section>
 
   <section id="clients">
-    <div class="clients-page">
+    <div class="clients-page lazy">
       <div class="clients__slider">
         <div class="title-container">
           <div class="title__text_primary title__text_theme_white">
@@ -582,7 +613,7 @@
       </div>
       <div class="logos">
         <div class="logo__item">
-          <img src="images/logo1.png">
+          <img data-src="images/logo1.png">
           <div class="arrow-box">
             <div class="arrow-box__text-container">
               <div class="arrow-box__text arrow-box__text_title">
@@ -599,7 +630,7 @@
           </div>
         </div>
         <div class="logo__item">
-          <img src="images/logo2.png">
+          <img data-src="images/logo2.png">
           <div class="arrow-box">
             <div class="arrow-box__text-container">
               <div class="arrow-box__text arrow-box__text_title">
@@ -616,7 +647,7 @@
           </div>
         </div>
         <div class="logo__item">
-          <img src="images/logo3.png">
+          <img data-src="images/logo3.png">
           <div class="arrow-box">
             <div class="arrow-box__text-container">
               <div class="arrow-box__text arrow-box__text_title">
@@ -633,7 +664,7 @@
           </div>
         </div>
         <div class="logo__item">
-          <img src="images/logo4.png">
+          <img data-src="images/logo4.png">
           <div class="arrow-box">
             <div class="arrow-box__text-container">
               <div class="arrow-box__text arrow-box__text_title">
@@ -650,7 +681,7 @@
           </div>
         </div>
         <div class="logo__item">
-          <img src="images/logo5.png">
+          <img data-src="images/logo5.png">
           <div class="arrow-box">
             <div class="arrow-box__text-container">
               <div class="arrow-box__text arrow-box__text_title">
@@ -667,7 +698,7 @@
           </div>
         </div>
         <div class="logo__item">
-          <img src="images/logo6.png">
+          <img data-src="images/logo6.png">
           <div class="arrow-box">
             <div class="arrow-box__text-container">
               <div class="arrow-box__text arrow-box__text_title">
@@ -705,12 +736,12 @@
 
       <div class="description-container">
         <div class="description__image-container">
-          <img class="description__image" src="./images/pc-photo.png">
+          <img class="description__image" data-src="./images/pc-photo.jpg">
         </div>
         <div class="description__bullet-list">
           <div class="bullet-list__item">
             <div class="item__icon">
-              <img src="images/bullet1.png">
+              <i class="fa fa-desktop fa-2x icon_white"></i>
             </div>
             <div class="item__text">
               <div class="item__text_primary">Responsive Layout</div>
@@ -724,7 +755,7 @@
           </div>
           <div class="bullet-list__item">
             <div class="item__icon">
-              <img src="images/bullet2.png">
+              <i class="fa fa-magic fa-2x icon_white"></i>
             </div>
             <div class="item__text">
               <div class="item__text_primary">Fully Customizable</div>
@@ -738,7 +769,7 @@
           </div>
           <div class="bullet-list__item">
             <div class="item__icon">
-              <img src="images/bullet3.png">
+              <i class="fa fa-bolt fa-2x icon_white"></i>
             </div>
             <div class="item__text">
               <div class="item__text_primary">Powerful. Impressive</div>
@@ -805,7 +836,7 @@
         </div>
         <div class="footer__post-container">
           <div class="thumbnail">
-            <img src="images/post1.png">
+            <img data-src="images/post1.jpg">
           </div>
           <div class="footer__text-container">
             <div class="footer-item__secondary-title">Lorem Ipsum Post Title</div>
@@ -818,7 +849,7 @@
 
         <div class="footer__post-container">
           <div class="thumbnail">
-            <img src="images/post2.png">
+            <img data-src="images/post2.jpg">
           </div>
           <div class="footer__text-container">
             <div class="footer-item__secondary-title">Lorem Ipsum Post Title</div>
@@ -830,7 +861,7 @@
 
         <div class="footer__post-container">
           <div class="thumbnail">
-            <img src="images/post3.png">
+            <img data-src="images/post3.jpg">
           </div>
           <div class="footer__text-container">
             <div class="footer-item__secondary-title">Lorem Ipsum Post Title</div>
@@ -912,6 +943,8 @@
       </div>
     </div>
   </section>
+
+  <script src="scripts.js" type="text/javascript"></script>
 </body>
 
 </html>
