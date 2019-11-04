@@ -1,0 +1,69 @@
+@import (reference) './variables.less';
+
+.title-container {
+    display: grid;
+    padding: 0px 50px 50px;
+    justify-items: center;
+    @media (max-width: @screen-s) {
+        padding: 0px 10px 50px;
+    }
+}
+
+.title {
+    color: @color-light;
+    font-size: 36px;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+
+    &_high {
+        line-height: 42px;
+    }
+
+    &_noncapital {
+        text-transform: none;
+    }
+
+    &_capital {
+        text-transform: capitalize;
+    }
+
+    &_centered {
+        text-align: center;
+    }
+
+    &_bold {
+        font-weight: 700;
+    }
+
+    &_semibold {
+        font-weight: 600;
+    }
+
+    &_lightweight {
+        font-weight: 300;
+    }
+
+    &_dark {
+        color: @color-dark;
+    }
+
+    &_ultradark {
+        color: #363636;
+    }
+
+    &_small {
+        font-size: 20px;
+    }
+
+    &_large {
+        font-size: 72px;
+    }
+
+    &_xsm {
+        font-size: 18px;
+    }
+
+    &_xxsm {
+        font-size: 14px;
+    }
+}

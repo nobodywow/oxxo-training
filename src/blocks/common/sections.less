@@ -1,0 +1,60 @@
+@import (reference) './variables.less';
+
+.section {
+    padding: 80px 20px 80px;
+    display: grid;
+    row-gap: 10px;
+    position: relative;
+
+
+    &_no-padding-bottom {
+        padding-bottom: 0px;
+    }
+
+    &_no-padding-sides {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    &_centered {
+        justify-items: center;
+    }
+
+    &__head {
+        display: grid;
+        padding: 0px 50px 40px;
+        justify-items: center;
+        @media (max-width: @screen-s) {
+            padding: 0px 10px 50px;
+        }
+    }    
+
+    &_clients {
+        background: url("./images/clients.jpg");        
+    }
+
+    &_amazing {
+        background: url("./images/amazing.jpg");
+    }
+
+    &_background {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(70, 70, 70, 0.5);
+        background-blend-mode: multiply;                
+    }
+}
+
+.header {
+    background: url("./images/about.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(70, 70, 70, 0.5);
+    background-blend-mode: multiply;
+    
+    height: @container-heigth;
+    
+    border-top: 3px solid orange;
+    border-bottom: 3px solid orange;
+    position: relative;        
+}

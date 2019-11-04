@@ -1,0 +1,15 @@
+@import (reference) './variables.less';
+
+.footer {
+    padding: 55px 135px 95px;
+    background-color: #303030;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+    @media (max-width: @screen-m) {
+        padding: 55px 50px 35px;
+    }
+    @media (max-width: @screen-s) {
+        padding: 55px 20px 35px;
+    }
+}

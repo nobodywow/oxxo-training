@@ -1,0 +1,49 @@
+@import (reference) './variables.less';
+
+.col2 {
+    display: flex;
+    justify-content: center;
+    &_margin {
+        margin: 0 160px;
+        @media (max-width: @screen-l) {
+            margin: 0 30px;
+        }
+        @media (max-width: @screen-s) {
+            margin: 0 0px;
+            width: 100%;
+        }
+    }
+}
+
+.col2__item {
+    display: grid;
+    padding: 1rem;
+    @media (max-width: @screen-m) {
+        text-align: center;
+        justify-items: center;
+    }    
+}
+
+.col2__item_hide {
+    @media (max-width: @screen-m) {
+        display: none;
+    }
+
+}
+
+.col4 {
+    display: grid;
+    grid-template-columns: 270px;
+    row-gap: 30px;
+    column-gap: 30px;
+    justify-content: center;    
+    @media (min-width: @screen-s) {
+        grid-template-columns: 270px 270px;
+        column-gap: 60px;
+    }
+    @media (min-width: @screen-l) {
+        grid-template-columns:  270px 270px 270px 270px;
+        row-gap: 0px;
+    }
+}
+

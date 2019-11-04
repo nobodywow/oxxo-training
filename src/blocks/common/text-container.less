@@ -1,0 +1,23 @@
+@import (reference) './variables.less';
+
+.text-container {
+    max-width: 470px;
+
+    &_m {
+        max-width: 300px;
+    }
+    &_lg {
+        max-width: 570px;
+        @media (max-width: @screen-m) {
+            max-width: 100%;
+        }
+    }
+    &_xlg {
+        max-width: 770px;
+        @media (max-width: @screen-m) {
+            max-width: 100%;
+        }
+    }
+    
+}
+

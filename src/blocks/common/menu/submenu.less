@@ -1,0 +1,64 @@
+@import (reference) './variables.less';
+
+.submenu {
+    list-style: none;
+    margin-top: 20px;
+    left: 0px;
+    background-color: @color-ultradark;
+    padding: 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.submenu-wrapper {
+    background: transparent;
+    position: absolute;
+    display: none;
+
+    &_small {
+        display: none;
+        z-index: 0;
+        left: 180px;
+        top: 80px;
+        padding: 20px 45px 55px;   
+    }
+}
+
+.submenu__link::before {
+    content: "\2022";
+    color: @color-light;
+    font-weight: 500;
+    width: 1em;
+    padding-right: 0.5em;
+}
+
+.submenu__link {
+    margin: 0px;
+    padding: 0px;
+}
+
+.submenu > .submenu__link > a {
+    color: #AFAFAF;
+}
+
+.main-menu__link:hover .submenu-wrapper {
+    display: block;
+}
+
+.main-menu__link:hover .submenu-wrapper_small {
+    display: none;
+}
+
+.submenu__link:hover > a {
+    color: @color-light;
+}
+
+.submenu__link:hover .submenu-wrapper_small {
+    display: block;
+}
+
+.submenu__link {
+    margin: 0px;
+    padding: 0px;
+}
+

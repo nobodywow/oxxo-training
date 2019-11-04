@@ -1,0 +1,82 @@
+@import (reference) './variables.less';
+
+.logo {
+    display: grid;
+    grid-template-rows: 45px 1fr;
+    justify-content: center;
+    border: 1px solid @color-light;
+    text-align: center;
+    height: 70px;
+    padding: 0px 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 0px;
+}
+
+.logo__title {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: @color-light;
+    font-size: 50px;
+    letter-spacing: 0.01em;
+    line-height: 0.95em;
+    margin-right: -.1em;
+
+}
+
+
+.logo_secondary {
+    border: 1px solid @color-ultradark;
+    padding: 0px 25px;
+    line-height: normal;
+}
+
+.logo_primary, .logo_secondary {
+    @media (max-width: @screen-m) {
+        display: none;
+    }
+}
+
+.logo_primary {    
+    @media (max-width: @screen-s) {
+        display: grid;
+    }
+}
+
+.logo_borderless {
+    border: 0 none;
+    padding: 15px;    
+}
+
+.logo_footer {
+    margin: 0;
+    padding: 0 15px;
+    @media (max-width: @screen-s) {
+        display: grid;
+        grid-template-rows: 35px 1fr;
+        align-items: center;
+    }
+}
+
+.logo__title_small {
+    line-height: 1.1em;
+    font-size: 40px;
+}
+
+.logo__title_ultradark {
+    color: @color-ultradark;
+}
+
+.logo__title_primary {
+    color: @color-primary;    
+}
+
+
+.logo__title_light {
+    color: @color-light;
+}
+
+.logo__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

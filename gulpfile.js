@@ -2,14 +2,19 @@ const gulp = require('gulp');
 const less = require('gulp-less');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync');
+const order = require('gulp-order');
 
 const server = browserSync.create();
 
 const paths = {
-    less: 'src/**/**/**/**/*.less'
+    less: 'src/**/**/**/*.less'
 };
 
 const scripts = () => gulp.src(paths.less, { sourcemaps: true })
+    .pipe(order([
+        'src/**/**/**/*.less',
+        'src/global.less'
+    ]))
     .pipe(concat('style.css'))
     .pipe(less())
     .pipe(gulp.dest('./public'))

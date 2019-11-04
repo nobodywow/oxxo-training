@@ -1,0 +1,32 @@
+@import (reference) './variables.less';
+
+.logo-slider {
+    display: flex;
+    padding: 40px 72px;
+    justify-content: center;
+    background-color: @color-primary;
+    @media (max-width: @screen-xl) {
+        display: none;        
+    }
+}
+
+.logos {
+    display: flex;
+    padding-top: 10px;
+    align-items: flex-start;
+}
+
+.logos__item {
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 40px;
+    width: 170px;
+    background-color: @color-primary;
+}
+
+.logos__item:hover > .tooltip {
+    display: block;
+}
